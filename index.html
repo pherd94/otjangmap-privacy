@@ -32,14 +32,15 @@
 </head>
 <body>
 <h1>옷장지도 개인정보 처리방침</h1>
-<p class="effective">시행일: 2026-08-22</p>
+<p class="effective">시행일: 2026-10-02 (1.0.1 개정 · 최초 2026-08-22)</p>
 
 <p>옷장지도(이하 "앱")는 사용자의 개인정보를 소중하게 생각합니다.<br>
 이 문서는 앱이 어떤 정보를 다루는지 설명합니다.</p>
 
 <h2>요약</h2>
 <p>옷장지도는 <strong>어떠한 개인정보도 수집하지 않습니다.</strong><br>
-서버가 없고, 회원가입이나 로그인 절차도 없으며, 앱이 외부로 데이터를 전송하지 않습니다.
+서버가 없고, 회원가입이나 로그인 절차도 없으며, 개인정보를 외부로 전송하지 않습니다.
+앱이 외부와 통신하는 경우는 새 버전이 나왔는지 Apple App Store에 확인할 때뿐입니다(아래 "새 버전 확인").
 사용자가 만든 모든 기록은 사용자의 기기 안에만 저장됩니다.</p>
 
 <h2>앱이 다루는 정보</h2>
@@ -49,15 +50,30 @@
   <tr><td>옷 사진 및 배경이 제거된 이미지</td><td>기기 내 앱 폴더</td><td>옷장 목록 표시</td></tr>
   <tr><td>옷 이름, 카테고리, 계절, 색상, 메모</td><td>기기 내 데이터베이스</td><td>분류 및 검색</td></tr>
   <tr><td>보관 위치(가구·칸)</td><td>기기 내 데이터베이스</td><td>옷 위치 기록</td></tr>
-  <tr><td>앱 설정값(최초 실행 시각 등)</td><td>기기 내 설정 저장소</td><td>앱 동작 유지</td></tr>
+  <tr><td>코디(고른 옷 조합과 배치)</td><td>기기 내 데이터베이스</td><td>코디 목록 표시</td></tr>
+  <tr><td>앱 설정값(최초 실행 시각, 마지막 새 버전 확인 시각 등)</td><td>기기 내 설정 저장소</td><td>앱 동작 유지</td></tr>
 </table>
 
 <p>배경 제거 처리는 Apple이 제공하는 온디바이스 기술로 기기 안에서 이루어지며, 사진이 외부로 나가지 않습니다.</p>
+
+<h2>새 버전 확인</h2>
+<p>앱은 새 버전이 나왔는지 알려드리기 위해 하루에 한 번 정도 Apple의 App Store(itunes.apple.com)에 이 앱의 최신 버전 번호를 확인합니다.</p>
+<ul>
+  <li>보내는 정보는 <strong>옷장지도의 앱 번호와 국가(한국)</strong>뿐입니다. 옷 사진, 옷 정보, 보관 위치, 기기 식별자 같은 정보는 보내지 않습니다.</li>
+  <li>받아 오는 정보는 최신 버전 번호와 그 버전에 필요한 iOS 버전뿐이며, 기기 안에만 저장합니다.</li>
+  <li>이 요청은 Apple로 바로 전달되며, 개발자는 이 요청과 관련한 어떤 정보도 받거나 저장하지 않습니다.</li>
+  <li>인터넷에 연결되어 있지 않으면 확인하지 않고 넘어가며, 앱의 다른 기능은 그대로 이용할 수 있습니다.</li>
+</ul>
+<p>통신 과정에서 Apple이 처리하는 IP 주소 등은 <a href="https://www.apple.com/kr/legal/privacy/">Apple 개인정보 처리방침</a>을 따릅니다.</p>
+
+<h2>의견 보내기</h2>
+<p>앱의 "의견 보내기"를 누르면 기기의 메일 앱이 열립니다. 메일을 보낼지는 사용자가 직접 정하며, 보내 주신 메일 주소와 내용은 답장하는 데에만 사용하고 다른 곳에 제공하지 않습니다. 앱이 메일을 대신 보내거나 따로 저장하지 않습니다.</p>
 
 <h2>권한 사용 목적</h2>
 <ul>
   <li><strong>카메라</strong> — 옷을 촬영해 앱에 등록하기 위해 사용합니다.</li>
   <li><strong>사진 보관함</strong> — 사용자가 선택한 사진만 앱으로 가져옵니다. 사진 보관함 전체를 읽거나 외부로 전송하지 않습니다.</li>
+  <li><strong>사진 보관함에 추가</strong> — 사용자가 만든 코디 이미지를 직접 앨범에 저장할 때만 사용합니다.</li>
 </ul>
 <p>권한은 해당 기능을 처음 사용할 때 요청하며, 거부해도 다른 기능은 정상적으로 이용할 수 있습니다.
 허용한 권한은 기기의 설정 앱에서 언제든 철회할 수 있습니다.</p>
@@ -81,8 +97,9 @@
 
 <div class="footnote">
 <strong>English Summary</strong><br>
-OtjangMap does not collect any personal data. The app has no server, no account system, and makes no
-network requests. All photos, storage locations, and settings are stored solely on the user's device.
+OtjangMap does not collect any personal data. The app has no server and no account system. The app's only
+network request is a periodic check with Apple's App Store (itunes.apple.com) for the latest version number;
+it sends no personal data and the developer receives nothing. All photos, storage locations, and settings are stored solely on the user's device.
 Background removal is performed on-device using Apple's Vision framework. Camera and photo library
 permissions are used only to capture or import clothing photos chosen by the user. Deleting the app
 removes all data it stored.<br>
